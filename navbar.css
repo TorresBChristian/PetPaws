@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
 body {
 	padding: 0;
 	margin: 0;
 }
-.container {
-	position: relative;
-	margin-top: 100px;
-    
-}
+
 .container img {
 	display: block;
 	width: 100%;
@@ -18,14 +16,14 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	padding: 0 5%;
 	height: 100px;
 	background-color: #FFEC4E;
 }
 nav .logo {
 	float: left;
-	width: 40%;
+	width: 15%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -33,17 +31,17 @@ nav .logo {
 	color: #fff;
 }
 nav .logo img{
-    width: 30%;
-    height: 50%;
+    width: 150px;
+    height: 56px;
 }
 nav .links {
 	float: right;
 	padding: 0;
 	margin: 0;
-	width: 60%;
+	width: 84%;
 	height: 100%;
 	display: flex;
-	justify-content: start;
+	justify-content: end;
 	align-items: center;
 }
 nav .links li {
@@ -60,11 +58,11 @@ nav .links a {
 nav .links a button {
     background-color: #fff;
     border-radius: 10px;
-    border-color: #fff;
+    border: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 #nav-toggle {
 	position: absolute;
@@ -103,10 +101,20 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: #fff;
+		background-color: rgb(255, 255, 255);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
+	}
+	nav .links a button {
+		background-color: #162A35;
+		color: white;
+		border-radius: 10px;
+		border: none;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	nav .links a {
 		font-size: 20px;
