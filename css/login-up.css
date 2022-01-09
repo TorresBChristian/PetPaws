@@ -2,5 +2,13 @@
 
 main .caja {
     font-family: 'Montserrat', sans-serif;
-    margin: 10% 35%;
+    margin: 0 35%;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    main .caja {
+        margin: 0 10%;
+        padding-top: 5rem;
+    }
 }
