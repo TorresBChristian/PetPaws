@@ -87,7 +87,7 @@ main .offcanvas .list-group-item {
     font-weight: 500;
 }
 main .registratuMascota img{
-    height: 450px;
+    
     width: 100%;
 }
 main .registratuMascota .col .register {
@@ -120,4 +120,10 @@ main .registratuMascota .col select {
 main .registratuMascota .col label {
     font-weight: 600;
     font-family: 'Montserrat';
+}
+main .registratuMascota .col textarea {
+    border-color: #061437;
+    background-color: transparent;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
