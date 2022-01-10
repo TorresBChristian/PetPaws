@@ -88,4 +88,36 @@ main .offcanvas .list-group-item {
 }
 main .registratuMascota img{
     height: 450px;
+    width: 100%;
+}
+main .registratuMascota .col .register {
+    background: linear-gradient(180deg, rgba(40, 195, 212, 0.2886) 0%, rgba(40, 195, 212, 0.37) 100%);
+    height: 100%;
+}
+main .registratuMascota h3 {
+    color: #032D53;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+main .registratuMascota .col a {
+    color: #061437;
+    background-color: white;
+    border-radius: 10px;
+}
+main .registratuMascota .col input {
+    border-color: #061437;
+    background-color: transparent;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+main .registratuMascota .col select {
+    border-color: #061437;
+    background-color: transparent;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+main .registratuMascota .col label {
+    font-weight: 600;
+    font-family: 'Montserrat';
 }
