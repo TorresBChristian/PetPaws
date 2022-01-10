@@ -19,6 +19,9 @@
 
     
 </head>
+    <?php
+        $usuario = $_SESSION["sess_user"];
+    ?>
     <header>
         <nav>
             <input id="nav-toggle" type="checkbox">
@@ -31,11 +34,11 @@
                 <li><a href="#">COMPRAR</a></li>
                 <li><a href="#">LIQUIDACIÓN</a></li>
                 <li><div class="dropdown">
-                        <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"> PAULA ROJAS</button>
+                        <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"><?php echo "$usuario"?></button>
                         <div class="dropdown-content">
                           <a href="#">Perfil</a>
                           <a href="#">Mis Compras</a>
-                          <a href="#">Cerrar Sesión</a>
+                          <a href="./cerrar_sesion.php">Cerrar Sesión</a>
                         </div>
                     </div>
                 </li>

@@ -25,7 +25,7 @@
     <main>
         <div class="container-fluid">
             <div class="float-end m-4">
-                <a href="./home.html" type="button" class="btn-close" aria-label="Close"></a>
+                <a href="./home.php" type="button" class="btn-close" aria-label="Close"></a>
             </div>
             <form action="login.php" method="post">
                 <div class="container">
@@ -81,7 +81,7 @@ if(isset($_POST["submit"])){
             if($usuario == $dbusername && $pass == $dbpassword) {
                 session_start();
                 $_SESSION['sess_user']=$dbnombre;
-                header("Location: home.html");
+                header("Location: home.php");
             }  
         } else {
             $message = "Error! Usuario o password inválidos";

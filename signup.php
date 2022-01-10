@@ -25,7 +25,7 @@
     <main>
         <div class="container-fluid">
             <div class="float-end m-4">
-                <a href="./home.html" type="button" class="btn-close" aria-label="Close"></a>
+                <a href="./home.php" type="button" class="btn-close" aria-label="Close"></a>
             </div>
             <form action="signup.php" method="post">
                 <div class="container">
@@ -66,6 +66,7 @@
         </div>
     </main>
 <?php
+
     if(isset($_POST["submit"])){
         if(!empty($_POST['email']) && !empty($_POST['pass']) && !empty($_POST['nombres'])) {
             $name=$_POST['nombres'];
