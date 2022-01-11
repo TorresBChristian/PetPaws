@@ -22,9 +22,7 @@
 <body>
     <?php
         session_start();
-        $usuario = "";
         if(isset($_SESSION["sess_user"])){  
-            // $usuario = $_SESSION["sess_user"];
             include("header-con-sesion.php");
         } else {
             include("header-sin-sesion.html");
@@ -42,21 +40,21 @@
                 <img src="./public/assets/home1.png" class="d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h1 class="fw-bold">Encuentra todo lo que tu mascota se merece</h1>
-                  <a class="btn px-5 py-3"><b>EMPEZAR</b></a>
+                  <a class="btn px-5 py-3"><b>IR A LA TIENDA</b></a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./public/assets/home2.png" class="d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">Encuentra todo lo que tu mascota se merece</h1>
-                    <a class="btn px-5 py-3"><b>EMPEZAR</b></a>
+                    <a class="btn px-5 py-3"><b>IR A LA TIENDA</b></a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./public/assets/home3.png" class="d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">Encuentra todo lo que tu mascota se merece</h1>
-                    <a class="btn px-5 py-3"><b>EMPEZAR</b></a>
+                    <a class="btn px-5 py-3"><b>IR A LA TIENDA</b></a>
                 </div>
               </div>
             </div>
@@ -81,7 +79,7 @@
                           <p class="card-text mb-0">Sexo: Macho</p>
                             <div class="row mx-0">
                                 <div class="col-12 col-sm-6 px-0 mt-2">
-                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conoceme más</a>
+                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conóceme más</a>
                                     
                                 </div>
                                 <div class="col-12 col-sm-6 px-0">
@@ -100,7 +98,7 @@
                           <p class="card-text mb-0">Sexo: Macho</p>
                             <div class="row mx-0">
                                 <div class="col-12 col-sm-6 px-0 mt-2">
-                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conoceme más</a>
+                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conóceme más</a>
                                     
                                 </div>
                                 <div class="col-12 col-sm-6 px-0">
@@ -119,7 +117,7 @@
                           <p class="card-text mb-0">Sexo: Macho</p>
                             <div class="row mx-0">
                                 <div class="col-12 col-sm-6 px-0 mt-2">
-                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conoceme más</a>
+                                    <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conóceme más</a>
                                     
                                 </div>
                                 <div class="col-12 col-sm-6 px-0">
@@ -210,7 +208,7 @@
         <div class="container-fluid mt-5 px-0 registratuMascota">
             <div class="row mx-0 img-fluid">
                 <div class="col col-sm-6 px-0 mx-0">
-                    <img src="./public/assets/home4.png">
+                    <img src="./public/assets/home4.png" height="450px">
                 </div>
                 <div class="col col-sm-6 px-0 mx-0">
                     <div class="container-fluid register">
@@ -218,7 +216,7 @@
                             <h3 class="text-center">ENCUÉNTRALE UNA FAMILIA A TU MASCOTA</h3>
                         </div>
                         <div>
-                            <div class="row mt-3 px-3">
+                            <div class="row mt-3 px-4">
                                 <div class="col">
                                     <label for="name" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" id="name">
@@ -228,7 +226,7 @@
                                     <input type="text" class="form-control" placeholder="Ingresar la edad aproximada" id="age">
                                 </div>
                             </div>
-                            <div class="row mt-3 px-3">
+                            <div class="row mt-3 px-4">
                                 <div class="col">
                                     <label for="tamaño" class="form-label">Tamaño</label>
                                         <select class="form-select" id="tamaño" required>
@@ -255,7 +253,64 @@
             </div>
         </div>
     </main>
-    
+    <footer class="pb-4  text-center" style="background-color: #061437;">
+        <div class="container">
+            <div class="row pb-0 pt-5 text-light" style="font-family: 'Nunito';">
+                <div class="col-lg col-md-12" style="justify-items: center;">
+                    <img class="mx-auto" src="./public/assets/logo-white.png" alt="" style="width: 40%;">
+                    <div class="row py-1">
+                        <div class="col"><a href="#" style="text-decoration: none; color: white;"><h2 style="font-weight: 700;">PET'S PAW</h2></a></div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-12 text-light pt-1">
+                    <div class="row">
+                        <div class="col"><h5 style="font-weight: 700;">Nosotros</h5></div>
+                    </div>
+                        <div class="row py-1">
+                            <div class="col"><a href="#" style="text-decoration: none; color: white;">¿Quiénes somos?</a></div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col"><a href="#" style="text-decoration: none; color: white;">Misión y Visión</a></div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col"><a href="#" style="text-decoration: none; color: white;">Nuestros Aliados</a></div>
+                        </div>
+                </div>
+                <div class="col-lg col-md-12 pt-1">
+                    <div class="row">
+                        <div class="col"><h5 style="font-weight: 700;">Redes Sociales</h5></div>
+                    </div>
+                    <div class="col-sm my-1">
+                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
+                            <img src="./public/assets/facebook.png" style="height: 28px; width: 28px;">Facebook
+                        </a>
+                    </div>
+                    <div class="col-sm my-1">
+                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
+                            <img src="./public/assets/twitter.png" style="height: 30px; width: 30px;">Twitter  
+                        </a>
+                    </div>
+                    <div class="col-sm my-1">
+                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
+                            <img src="./public/assets/insta.png"style="height: 30px; width: 30px;">Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3 mt-4 border-top border-light text-center">
+                <div class="col-lg-4 col-md-12">
+                    <a href="#" style="text-decoration: none; color: white;">Política de Privacidad</a>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <a href="3" style="text-decoration: none; color: white;">Avisos Legales</a>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <a href="#" style="text-decoration: none; color: white;">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

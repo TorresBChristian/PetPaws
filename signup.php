@@ -15,19 +15,18 @@
     />
 
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/login-up.css">
+    <link rel="stylesheet" href="./css/sign-up.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     
 </head>
- 
 <body>
     <main>
         <div class="container-fluid">
             <div class="float-end m-4">
                 <a href="./home.php" type="button" class="btn-close" aria-label="Close"></a>
             </div>
-            <form action="signup.php" method="post">
+            <form action="signup.php" method="POST">
                 <div class="container">
                     <div class="caja">
                         <h3 class="text-center fw-bold my-4">Regístrate</h3>
@@ -51,7 +50,7 @@
                         <div class="text-center my-4">
                             <input type="submit" class="btn px-4 py-2" name="submit" style="background-color: #FFEC4E; color: #061437;" value="CREAR UNA CUENTA">
                         </div>
-                        <p class="my-3 text-center">O regístrate con</p>
+                        <!-- <p class="my-3 text-center">O regístrate con</p>
                         <div class="container row m-0">
                             <div class="col col-sm-6">
                                 <a><img class="float-end" src="./public/assets/fb.png" style="height: 30px; width: 30px;"></a>
@@ -59,14 +58,13 @@
                             <div class="col col-sm-6">
                                 <a><img src="./public/assets/Google.png" style="height: 30px; width: 30px;"></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </form>
         </div>
     </main>
 <?php
-
     if(isset($_POST["submit"])){
         if(!empty($_POST['email']) && !empty($_POST['pass']) && !empty($_POST['nombres'])) {
             $name=$_POST['nombres'];
