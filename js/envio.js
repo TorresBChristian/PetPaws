@@ -16,7 +16,6 @@ const codigo = document.getElementById('codigo');
 const idFormulario = document.getElementById('procesar-pago');
 const inputs = document.querySelectorAll('#procesar-pago input');
 
-
 //PARA VALIDAR FORMULARIO
 const expresiones = {
 	ubicacion: /^[a-zA-ZÀ-ÿ-Z0-9\s\_\-\.\#]{3,50}$/, // Letras, numeros, guion, espacio, #, . y guion_bajo
@@ -24,7 +23,7 @@ const expresiones = {
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
-    tarjeta: /^\d{15,20}$/,
+    tarjeta: /^[0-9\-]{14}$/,
     expiracion: /^[0-9\-\/]{7}$/,
     cvv: /^\d{3}$/
 }

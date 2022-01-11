@@ -7,7 +7,7 @@
     <title>PET'S PAW</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+
     <!-- Google Fonts NUnito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,24 +26,24 @@
         <nav>
             <input id="nav-toggle" type="checkbox">
             <div class="logo">
-                <img src="./public/assets/logo-letra.png">
+                <a href="./home.php">
+                    <img src="./public/assets/logo-letra.png">
+                </a>
             </div>
             <ul class="links">
-                <li><a href="#home">ADOPTAR</a></li>
-                <li><a href="#">DAR EN ADOPCIÓN</a></li>
+                <li><a href="./adoptar.php">ADOPTAR</a></li>
+                <li><a href="./daEnAdopcion.php">DAR EN ADOPCIÓN</a></li>
                 <li><a href="#">COMPRAR</a></li>
                 <li><a href="#">LIQUIDACIÓN</a></li>
                 <li><div class="dropdown">
                         <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"><?php echo "$usuario"?></button>
                         <div class="dropdown-content">
-                          <a href="#">Perfil</a>
-                          <a href="#">Mis Compras</a>
-                          <a href="./cerrar_sesion.php">Cerrar Sesión</a>
+                            <a href="./cerrar_sesion.php">Cerrar Sesión</a>
                         </div>
                     </div>
                 </li>
             </ul>
-            
+
             <label for="nav-toggle" class="icon-burger">
                 <div class="line"></div>
                 <div class="line"></div>
