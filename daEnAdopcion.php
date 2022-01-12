@@ -46,11 +46,11 @@
                                 <div class="row mt-3 px-4">
                                     <div class="col">
                                         <label for="name" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" name="nombre" id="name" value="baloo" required>
+                                        <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" name="nombre" id="name" value="max" required>
                                     </div>
                                     <div class="col">
                                         <label for="age" class="form-label">Edad</label>
-                                        <input type="text" class="form-control" placeholder="Ingresar la edad aproximada" name="age" id="age" value="1" required>
+                                        <input type="text" class="form-control" placeholder="Ingresar la edad aproximada" name="age" id="age" value="4" required>
                                     </div>
                                 </div>
                                 <div class="row mt-3 px-4">
@@ -73,7 +73,7 @@
                                 <div class="row mt-3 px-4">
                                     <div class="col">
                                         <label for="descripción" class="form-label">Descripción</label>
-                                        <textarea class="form-control" name="descripcion" id="descripción" rows="1">Perro de 1 año 3 meses de raza poodle</textarea>
+                                        <textarea class="form-control" name="descripcion" id="descripción" rows="1">Gato</textarea>
                                         
                                     </div>
                                     <div class="col">

@@ -22,6 +22,10 @@
 <body>
     <!-- Navbar -->
     <header>
+        <?php
+            session_start();
+            $usuario = $_SESSION["sess_user"];
+        ?>
         <nav class="navbar navbar-expand-lg fixed-top navbar2">
             <div class="container-fluid px-0 mx-5">
                 <div class="logo">
@@ -36,11 +40,16 @@
                 <div class="navbar-collapse text-center collapse show" id="navbarSupportedContent" style="font-family: 'Nunito'; font-weight: 700;">
                     <!-- Left links -->
                     <ul class="navbar-nav links2" style="margin-right: 0px;">
-                        <li><a href="#">ADOPTAR</a></li>
-                        <li><a href="#">DAR EN ADOPCIÓN</a></li>
+                        <li><a href="adoptar.php">ADOPTAR</a></li>
+                        <li><a href="daEnAdopcion.php">DAR EN ADOPCIÓN</a></li>
                         <li><a href="#">COMPRAR</a></li>
-                        <li><a href="./signup.php"><button class="register"><b>REGÍSTRATE</b></button></a></li>
-                        <li><a href="./login.php" class="iniciar">INICIAR SESIÓN</a></li>
+                        <li><div class="dropdown">
+                            <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"><?php echo "$usuario"?></button>
+                            <div class="dropdown-content">
+                                <a href="./cerrar_sesion.php">Cerrar Sesión</a>
+                            </div>
+                        </div>
+                        </li>
                     </ul>
                     
 
@@ -50,7 +59,7 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown">
                                     <img onmouseover="showCart(this)" src="./public/assets/icon-carrito.png" loading="lazy" class="nav-link dropdown-toggle img-fluid d-inline-block align-top p-1" loading="lazy"
-                                         href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                        href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false"></img>
                                         <!--<div  class="badge rounded-circle text-light text-center px-1 py-1" style="height: 30px; width: 30px; font-size: 22px; background-color: #061437;">
                                             <p class="count-product" style="text-align: center; top: auto;">0</p>

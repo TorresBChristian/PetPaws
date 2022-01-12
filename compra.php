@@ -81,7 +81,7 @@
                             </div>
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
-                                <a href="producto.php" class="btn btn-info btn-block">Actualizar carrito</a>
+                                <a href="carrito2.php" class="btn btn-info btn-block">Actualizar carrito</a>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <button href="envio.php" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 12, 2022 at 03:56 AM
+-- Generation Time: Jan 12, 2022 at 07:46 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -41,14 +41,17 @@ CREATE TABLE IF NOT EXISTS `mascota` (
   `email` varchar(65) DEFAULT NULL,
   `contacto` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_mascota`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `mascota`
 --
 
 INSERT INTO `mascota` (`id_mascota`, `nombre`, `tamaño`, `edad`, `sexo`, `descripcion`, `imagen`, `nameP`, `lastName`, `email`, `contacto`) VALUES
-(20, 'Tito', 'Pequeño', 11, 'Macho', 'Mi nombre es Tito, y soy un adulto mayor. Busco una familia que me quiera mucho, me engría y me tenga mucha paciencia, ya que por mi edad soy cieguito. Dame una oportunidad para tener una casita, te prometo que me portaré bien y te daré mucho amor. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!', 'poodle.jpg', 'John', 'Titor', 'john.titor@gmail.com', 991048596);
+(1, 'Tito', 'Pequeño', 11, 'Macho', 'Mi nombre es Tito, y soy un adulto mayor. Busco una familia que me quiera mucho, me engría y me tenga mucha paciencia, ya que por mi edad soy cieguito. Pero no muerdo. Casi nunca. Dame una oportunidad para tener una casita, te prometo que me portaré bien y te daré mucho amor. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!', 'chihuahua.jpg', 'John', 'Titor', 'john.titor@gmail.com', 991048596),
+(2, 'Spark', 'Pequeño', 11, 'Macho', 'Mi nombre es Spark y busco una familia que me cuide.', 'poodle.jpg', 'Paula', 'Rojas', 'paula.rojas@gmail.com', 993875144),
+(3, 'Nayna', 'Pequeño', 5, 'Hembra', 'Mi nombre es Nayna y estoy en busca de una familia.', 'gato.png', 'Saqib', 'Zahid', 'saqib.zahid@gmail.com', 985694412),
+(4, 'Baloo', 'Grande', 5, 'Macho', 'Soy Baloo y estoy en busca de una familia.', 'husky.jpg', 'Christian', 'Torres', 'christian.torres@gmail.com', 939639639);
 
 -- --------------------------------------------------------
 
@@ -63,14 +66,14 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `correo` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombre`, `correo`, `password`) VALUES
-(2, 'PAULA ROJAS', 'paula.rojas@unmsm.edu.pe', 'c');
+(2, 'PAULA ROJAS', 'paula.rojas@unmsm.edu.pe', 'paula');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

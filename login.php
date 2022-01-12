@@ -37,11 +37,11 @@
                         </div>           
                         <div class="my-3">
                             <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" value="paula.rojas@unmsm.edu.pe">
+                            <input type="email" class="form-control" name="email" id="email">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" name="password" id="password" value="c">
+                            <input type="password" class="form-control" name="password" id="password">
                         </div>
                         <div class="text-center my-4">
                             <input type="submit" class="btn px-4 py-2" name="submit" style="background-color: #FFEC4E; color: #061437;" value="INICIAR SESIÓN">

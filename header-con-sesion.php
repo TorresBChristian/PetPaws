@@ -33,7 +33,7 @@
             <ul class="links">
                 <li><a href="adoptar.php">ADOPTAR</a></li>
                 <li><a href="daEnAdopcion.php">DAR EN ADOPCIÓN</a></li>
-                <li><a href="producto.php">COMPRAR</a></li>
+                <li><a href="carrito2.php">COMPRAR</a></li>
                 <li><div class="dropdown">
                         <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"><?php echo "$usuario"?></button>
                         <div class="dropdown-content">
