@@ -254,61 +254,10 @@
         </div>
     </main>
     <footer class="pb-4  text-center" style="background-color: #061437;">
-        <div class="container">
-            <div class="row pb-0 pt-5 text-light" style="font-family: 'Nunito';">
-                <div class="col-lg col-md-12" style="justify-items: center;">
-                    <img class="mx-auto" src="./public/assets/logo-white.png" alt="" style="width: 40%;">
-                    <div class="row py-1">
-                        <div class="col"><a href="#" style="text-decoration: none; color: white;"><h2 style="font-weight: 700;">PET'S PAW</h2></a></div>
-                    </div>
-                </div>
-                <div class="col-lg col-md-12 text-light pt-1">
-                    <div class="row">
-                        <div class="col"><h5 style="font-weight: 700;">Nosotros</h5></div>
-                    </div>
-                        <div class="row py-1">
-                            <div class="col"><a href="#" style="text-decoration: none; color: white;">¿Quiénes somos?</a></div>
-                        </div>
-                        <div class="row py-1">
-                            <div class="col"><a href="#" style="text-decoration: none; color: white;">Misión y Visión</a></div>
-                        </div>
-                        <div class="row py-1">
-                            <div class="col"><a href="#" style="text-decoration: none; color: white;">Nuestros Aliados</a></div>
-                        </div>
-                </div>
-                <div class="col-lg col-md-12 pt-1">
-                    <div class="row">
-                        <div class="col"><h5 style="font-weight: 700;">Redes Sociales</h5></div>
-                    </div>
-                    <div class="col-sm my-1">
-                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
-                            <img src="./public/assets/facebook.png" style="height: 28px; width: 28px;">Facebook
-                        </a>
-                    </div>
-                    <div class="col-sm my-1">
-                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
-                            <img src="./public/assets/twitter.png" style="height: 30px; width: 30px;">Twitter  
-                        </a>
-                    </div>
-                    <div class="col-sm my-1">
-                        <a href="https://web.facebook.com/" style="text-decoration: none; color: white;">
-                            <img src="./public/assets/insta.png"style="height: 30px; width: 30px;">Instagram
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-3 mt-4 border-top border-light text-center">
-                <div class="col-lg-4 col-md-12">
-                    <a href="#" style="text-decoration: none; color: white;">Política de Privacidad</a>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <a href="3" style="text-decoration: none; color: white;">Avisos Legales</a>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <a href="#" style="text-decoration: none; color: white;">Términos y Condiciones</a>
-                </div>
-            </div>
-        </div>
+            <?php
+                // FOOTER
+                include("footer.html");
+            ?>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
