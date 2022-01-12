@@ -156,7 +156,7 @@ class Carrito {
         localStorage.clear();
     }
 
-    //Mostrar los productos guardados en el LS en compra.html
+    //Mostrar los productos guardados en el LS en compra.php
     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();

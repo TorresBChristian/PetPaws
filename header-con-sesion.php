@@ -31,10 +31,9 @@
                 </a>
             </div>
             <ul class="links">
-                <li><a href="./adoptar.php">ADOPTAR</a></li>
-                <li><a href="./daEnAdopcion.php">DAR EN ADOPCIÓN</a></li>
-                <li><a href="#">COMPRAR</a></li>
-                <li><a href="#">LIQUIDACIÓN</a></li>
+                <li><a href="adoptar.php">ADOPTAR</a></li>
+                <li><a href="daEnAdopcion.php">DAR EN ADOPCIÓN</a></li>
+                <li><a href="producto.php">COMPRAR</a></li>
                 <li><div class="dropdown">
                         <button class="dropbtn"><img src="./public/assets/icon-person.png" width="30px"><?php echo "$usuario"?></button>
                         <div class="dropdown-content">
@@ -42,6 +41,9 @@
                         </div>
                     </div>
                 </li>
+                <button type="button" class="btn py-0 px-0" >
+                    <img src="./public/assets/icon-carrito.png" class="nav-link dropdown-toggle img-fluid d-inline-block align-top p-1" href="#"></img>
+                </button>
             </ul>
 
             <label for="nav-toggle" class="icon-burger">

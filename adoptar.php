@@ -176,8 +176,9 @@
                     }
                 }
             ?>
+            
     </main>
-    <footer class="pb-4  text-center" style="background-color: #061437;">
+    <footer class="pb-4 text-center" style="background-color: #061437;">
             <?php
                 // FOOTER
                 include("footer.html");

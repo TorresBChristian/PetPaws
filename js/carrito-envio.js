@@ -130,7 +130,7 @@ class Carrito {
         });
     }
 
-    //Mostrar los productos guardados en el LS en compra.html
+    //Mostrar los productos guardados en el LS en compra.php
     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
@@ -171,7 +171,7 @@ class Carrito {
         localStorage.clear();
     }
 
-    //Cambiar a confirmacion.html
+    //Cambiar a confirmacion.php
     relizarPedido(e){
         e.preventDefault();
         if(cliente.value === '' || correo.value === '' || ubicacion.value === '' || tarjeta.value === '' || contacto.value === '' || expiracion.value === '' || codigo.value === ''){
@@ -191,7 +191,7 @@ class Carrito {
                 timer: 3000
             })
         }else {
-            location.href = "confirmacion.html";
+            location.href = "confirmacion.php";
         }
     }
 

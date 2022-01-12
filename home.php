@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
         
 <body>
@@ -181,78 +182,6 @@
                 <a href="adoptar.php" class="btn px-5 py-3"><b>VER MÁS</b></a>
             </div>
         </div>
-        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content mt-4">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h4 class="title text-center mt-4" id="exampleModalLabel">NOMBRE DE LA MASCOTA</h4>
-                        <ul class="list-group list-group-horizontal mt-2">
-                            <li class="list-group-item" style="border-right: 2px solid rgba(196, 196, 196, 1);">Sexo: Macho</li>
-                            <li class="list-group-item" style="border-right: 2px solid rgba(196, 196, 196, 1);">EDAD: 2 años</li>
-                            <li class="list-group-item">TAMAÑO: Mediano</li>
-                        </ul>
-                        <div class="row mx-0 my-3">
-                            <div class="col-12 col-sm-7">
-                                <p class="mb-0 subtitulo">¡HOLA!</p>
-                                <p style="align-content: justified;">Mi nombre es Tito, y soy un adulto mayor. Busco una familia que me quiera mucho, me engría y me 
-                                    tenga mucha paciencia, ya que por mi edad soy cieguito. Dame una oportunidad para tener una casita, 
-                                    te prometo que me portaré bien y te daré mucho amor. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!</p>
-                                
-                            </div>
-                            <div class="col-12 col-sm-5">
-                                <img class="mb-3" src="./public/assets/perro2.png" width="100%" style="border-radius: 15px;">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <h4 class="title" id="offcanvasRightLabel">NOMBRE DE LA MASCOTA</h4>
-                <ul class="list-group list-group-horizontal mt-2">
-                    <li class="list-group-item" style="border-right: 2px solid rgba(196, 196, 196, 1);">Sexo: Macho</li>
-                    <li class="list-group-item" style="border-right: 2px solid rgba(196, 196, 196, 1);">EDAD: 2 años</li>
-                    <li class="list-group-item">TAMAÑO: Mediano</li>
-                </ul>
-                <div class="row mx-0 my-2">
-                    <div class="col col-md-6">
-                        <p class="mb-0 mt-3 subtitulo">¡HOLA!</p>
-                        <p>Puedes llamarme Tito. Gracias por adoptarme. Lo siguiente que debes hacer es contactar con mi dueño</p>
-                        <p class="subtitulo">MI DUEÑO TEMPORAL:</p>
-                        <p class="mb-0">Nombre Completo del dueño</p>
-                        <p class="mb-0 px-3"><img src="./public/assets/wsp.png" width="25px" height="25px"> + 51 999999991</p>
-                        <p class="mb-0 px-3"><img src="./public/assets/gmail.png" width="25px" height="25px"> nombre@gmail.com</p>
-                    </div>
-                    <div class="col col-md-6">
-                        <img class="mb-3 mt-3" src="./public/assets/perro2.png" width="100%" style="border-radius: 15px;">
-                    </div>
-                </div>
-                
-                <p class="mb-0 subtitulo">PROCESO</p>
-                <ul>
-                    <li>Completa el siguiente formulario: <a href="https://forms.gle/2Dg2mVAV1HnjCYe4A ">https://forms.gle/2Dg2mVAV1HnjCYe4A </a>y envíalo al correo del dueño.</li>
-                    <li>En las siguientes 24 horas, el dueño se pondrá en contacto contigo para indicarte el resultado de tu solicitud de adopción y los pasos a seguir.</li>
-                    <li>Por último, acepta su compromiso con la mascota</li>
-                </ul>
-                <div class="col-12 container">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Asumir el compromiso de mantenerlo, alimentarlo, cuidarlo, respetarlo, darle cariño y velar por su salud. Asegúrate de estar preparado para esta responsabilidad antes de solicitar la adopción. 
-                        </label>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="container-fluid mt-5 px-0 registratuMascota">
             <div class="row mx-0 img-fluid">
@@ -265,7 +194,7 @@
                             <h3 class="text-center">ENCUÉNTRALE UNA FAMILIA A TU MASCOTA</h3>
                         </div>
                         <div>
-                            <div class="row mt-3 px-4">
+                            <!-- <div class="row mt-3 px-4">
                                 <div class="col">
                                     <label for="name" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" id="name">
@@ -291,10 +220,10 @@
                                     <option>Hembra</option>
                                 </select>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="mb-4 mt-5 container text-center">
-                            <a class="btn px-5 py-3 fw-bold"><b>CONTINUAR</b></a>
+                            <a href="daEnAdopcion.php" class="btn px-5 py-3 fw-bold"><b>LLENAR ADOPCIÓN</b></a>
                         </div>
                         
                     </div>
@@ -302,11 +231,11 @@
             </div>
         </div>
     </main>
-    <footer class="pb-4  text-center" style="background-color: #061437;">
-            <?php
-                // FOOTER
-                include("footer.html");
-            ?>
+    <footer class="pb-4 text-center" style="background-color: #061437;">
+        <?php
+            // FOOTER
+            include("footer.html");
+        ?>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
