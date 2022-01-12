@@ -94,7 +94,7 @@
                         $dbcontacto = $row['contacto'];
 
                         // AVISO EN CARD GRID
-                        echo '<div class="col-6 col-sm-4">';
+                        echo '<div class="col-6 col-sm-4 my-3">';
                         echo '<div class="card" style="width: 95%;">';
                         echo '        <img src="', $dbimagen, '" height="210px" class="card-img-top" alt="...">';
                         echo '        <div class="card-body">';
@@ -154,11 +154,11 @@
                         echo '       <div class="row mx-0 my-2">';
                         echo '            <div class="col col-md-6">';
                         echo '               <p class="mb-0 mt-3 subtitulo">¡HOLA!</p>';
-                        echo '                <p>Puedes llamarme ', $dbnombre, '. Gracias por adoptarme. Lo siguiente que debes hacer es contactar con mi dueño</p>';
-                        echo '                <p class="subtitulo">MI DUEÑO TEMPORAL:</p>';
-                        echo '                <p class="mb-0">', $dbnameP, ' ', $dblastName, '</p>';
-                        echo '                <p class="mb-0 px-3"><img src="./public/assets/wsp.png" width="25px" height="25px"> ', $dbcontacto, '</p>';
-                        echo '                <p class="mb-0 px-3"><img src="./public/assets/gmail.png" width="25px" height="25px"> ', $dbemail, '</p>';
+                        echo '               <p>Puedes llamarme ', $dbnombre, '. Gracias por adoptarme. Lo siguiente que debes hacer es contactar con mi dueño</p>';
+                        echo '               <p class="subtitulo">MI DUEÑO TEMPORAL:</p>';
+                        echo '               <p class="mb-0 px-3">', $dbnameP, ' ', $dblastName, '</p>';
+                        echo '               <p class="mb-0 px-3">', $dbcontacto, '</p>';
+                        echo '               <p class="mb-0 px-3">', $dbemail, '</p>';
                         echo '            </div>';
                         echo '            <div class="col col-md-6">';
                         echo '                <img class="mb-3 mt-3" src="', $dbimagen, '" width="100%" style="border-radius: 15px;">';
