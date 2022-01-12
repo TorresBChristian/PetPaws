@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/home.css">
     
 </head>
@@ -37,7 +36,8 @@
                 </div>
                 <div class="col col-sm-7 px-0 mx-0">
                     <div class="container-fluid register">
-                        <form action="daEnAdopcion.php" method="POST">
+                        <!-- FORM -->
+                        <form action="daEnAdopcion.php" method="POST" enctype="multipart/form-data">
                             <div class="container pb-4 pt-5 px-5">
                                 <h3 class="text-center">REGISTRA A TU MASCOTA</h3>
                             </div>
@@ -45,17 +45,17 @@
                                 <div class="row mt-3 px-4">
                                     <div class="col">
                                         <label for="name" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" name="name" id="name" required>
+                                        <input type="text" class="form-control" placeholder="Ingresar nombre de su mascota" name="nombre" id="name" value="baloo" required>
                                     </div>
                                     <div class="col">
                                         <label for="age" class="form-label">Edad</label>
-                                        <input type="text" class="form-control" placeholder="Ingresar la edad aproximada" name="age" id="age" required>
+                                        <input type="text" class="form-control" placeholder="Ingresar la edad aproximada" name="age" id="age" value="1" required>
                                     </div>
                                 </div>
                                 <div class="row mt-3 px-4">
                                     <div class="col">
                                         <label for="tamaño" class="form-label">Tamaño</label>
-                                            <select class="form-select" name="tamaño" id="tamaño" required>
+                                            <select class="form-select" name="tamaño" id="tamaño" value="Pequeño"required>
                                             <option>Pequeño</option>
                                             <option>Mediano</option>
                                             <option>Grande</option>
@@ -63,7 +63,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="sexo" class="form-label">Sexo</label>
-                                        <select class="form-select" name="sexo" id="sexo" required>
+                                        <select class="form-select" name="sexo" id="sexo" value="Macho"required>
                                         <option>Macho</option>
                                         <option>Hembra</option>
                                     </select>
@@ -72,11 +72,12 @@
                                 <div class="row mt-3 px-4">
                                     <div class="col">
                                         <label for="descripción" class="form-label">Descripción</label>
-                                        <textarea class="form-control" name="descripción" id="descripcion" rows="1"></textarea>
+                                        <textarea class="form-control" name="descripcion" id="descripción" rows="1">Perro de 1 año 3 meses de raza poodle</textarea>
+                                        
                                     </div>
                                     <div class="col">
                                         <label for="archivo" class="form-label">Imagen</label>
-                                        <input type="file" class="form-control" name="archivo" id="archivo" multiple>
+                                        <input type="file" class="form-control" name="archivo" id="archivo">
                                     </div>
                                 </div>
                             </div>
@@ -84,21 +85,21 @@
                             <div class="row mt-3 px-4">
                                 <div class="col">
                                     <label for="nameP" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nameP" id="nameP">
+                                    <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nameP" value="Paula" id="nameP">
                                 </div>
                                 <div class="col">
                                     <label for="lastName" class="form-label">Apellido</label>
-                                    <input type="text" class="form-control" placeholder="Ingrese su apellido" name="lastName" id="lastName">
+                                    <input type="text" class="form-control" placeholder="Ingrese su apellido" name="lastName" value="Rojas" id="lastName">
                                 </div>
                             </div>
                             <div class="row mt-3 px-4">
                                 <div class="col">
                                     <label for="email" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" placeholder="Ingrese su correo electrónico de contacto" name="email" id="email">
+                                    <input type="email" class="form-control" placeholder="Ingrese su correo electrónico de contacto" name="email" value="paula.rojas@gmail.com" id="email">
                                 </div>
                                 <div class="col">
                                     <label for="contacto" class="form-label">Contacto (opcional)</label>
-                                    <input type="text" class="form-control" placeholder="Ingrese su número de contacto" name="contacto" id="contacto">
+                                    <input type="text" class="form-control" placeholder="Ingrese su número de contacto" name="contacto" id="contacto" value="987654321">
                                 </div>
                             </div>
                             <div class="mb-5 mt-5 container text-center">
@@ -173,50 +174,48 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
-    <!-- <?php
-    if(isset($_POST["submit"])){
-        if(!empty($_POST['email']) && !empty($_POST['nameP'])) {
-            $name = $_POST['name'];
-            $age = $_POST['age'];
-            $tamaño = $_POST['tamaño'];
-            $sexo = $_POST['sexo'];
-            $descripcion = $_POST['descripcion'];
-            $imagen = $_POST['archivo'];
-            $nameP = $_POST['nameP'];
-            $lastName = $_POST['lastName'];
-            $email = strtolower($_POST['email']);
-            $contacto = $_POST['contacto'];
+    <?php
+        if(isset($_POST["submit"])){
+            if(!empty($_POST['email']) && !empty($_POST['nombre'])) {
+                $nombre = $_POST['nombre'];
+                $edad = $_POST['age'];
+                $tamaño = $_POST['tamaño'];
+                $sexo = $_POST['sexo'];
+                $descripcion = $_POST['descripcion'];
+                $imagen = $_FILES["archivo"]["name"];
+                $nameP = $_POST['nameP'];
+                $lastName = $_POST['lastName'];
+                $email = strtolower($_POST['email']);
+                $contacto = $_POST['contacto'];
 
-            $con=mysqli_connect('localhost','root','','petpaws');
-            $query=mysqli_query($con,"SELECT * FROM mascota WHERE name='".$name."'");
-            $numrows=mysqli_num_rows($query);
+                $con=mysqli_connect('localhost','root','','petpaws');
+                mysqli_set_charset($con, 'utf8');
+                $query=mysqli_query($con, "SELECT * FROM mascota WHERE nombre='".$nombre."'");
+                $numrows=mysqli_num_rows($query);
 
-            if($numrows==0) {
-                $sql="INSERT INTO mascota ('nombre', 'tamaño', 'edad', 'sexo', 'descripcion', 'imagen', 'nameP', 'lastName', 'email', 'contacto')
-                    VALUES ('$name', '$tamaño', '$age', '$sexo', '$descripcion', '$archivo', '$nameP', '$lastName', '$email', '$contacto')";
-                $result=mysqli_query($con, $sql);
-                
-                if($result) {
-                    $message = "Mascota registrada correctamente";
-                    echo "<script type='text/javascript'>alert('$message');</script>";
-                    echo "<script>window.location.href = 'login.php';</script>";
-                } else {  
-                    $message = "Error!";
+                if($numrows==0) {
+                    $sql="INSERT INTO mascota (nombre, tamaño, edad, sexo, descripcion, imagen, nameP, lastName, email, contacto) VALUES ('$nombre', '$tamaño', '$edad', '$sexo', '$descripcion', '$imagen', '$nameP', '$lastName', '$email', '$contacto')";
+                    $result=mysqli_query($con, $sql);
+                    $insert = mysqli_insert_id($con);
+                    if($result) {
+                        $message = "Mascota registrada correctamente";
+                        move_uploaded_file($_FILES["archivo"]["tmp_name"], "uploads/".$imagen);
+                        echo "<script type='text/javascript'>alert('$message');</script>";
+                        echo "<script>window.location.href = 'adoptar.php';</script>";
+                    } else {  
+                        $message = "Error...!";
+                        echo "<script type='text/javascript'>alert('$message');</script>";
+                    }
+                } else {
+                    $message = "La mascota ya fue registrada anteriormente. Verificar que los datos corresponden a una mascota diferente.";
                     echo "<script type='text/javascript'>alert('$message');</script>";
                 }
-
             } else {
-                $message = "Error! El correo ingresado ya está siendo usado por otro usuario";
+                $message = "Error! Completar todos los campos";
                 echo "<script type='text/javascript'>alert('$message');</script>";
-
             }
-
-        } else {
-            $message = "Error! Completar todos los campos";
-            echo "<script type='text/javascript'>alert('$message');</script>";
         }
-    }
-    ?> -->
+    ?>
 </body>
 
 </html>

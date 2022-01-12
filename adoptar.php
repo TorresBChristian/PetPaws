@@ -28,6 +28,26 @@
         } else {
             include("header-sin-sesion.html");
         }
+
+        $con=mysqli_connect('localhost','root','','petpaws');
+        mysqli_set_charset($con, 'utf8');
+        $query=mysqli_query($con, "SELECT * FROM mascota");
+        $numrows=mysqli_num_rows($query);
+        if($numrows!=0) {
+            while($row=mysqli_fetch_assoc($query)) {
+                $dbnombre = $row['nombre'];
+                $dbedad = $row['edad'];
+                $dbtamaño = $row['tamaño'];
+                $dbsexo = $row['sexo'];
+                $dbdescripcion = $row['descripcion'];
+                $dbimagen = 'uploads/'.$row["imagen"];
+                $dbnameP = $row['nameP'];
+                $dblastName = $row['lastName'];
+                $dbemail = $row['email'];
+                $dbcontacto = $row['contacto'];
+            }
+
+        }
     ?>
     <main class="mt-5">
         <div id="carouselExampleCaptions mt-5 pt-5" class="carousel slide" data-bs-ride="carousel">
@@ -74,15 +94,14 @@
             <div class="row mx-0 mt-4">
                 <div class="col-6 col-sm-4">
                     <div class="card" style="width: 95%;">
-                        <img src="./public/assets/perro1.png" height="210px" class="card-img-top" alt="...">
+                        <img src="<?php echo $dbimagen; ?>" height="210px" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">NOMBRE DE LA MASCOTA</h5>
-                            <p class="card-text mb-0">Edad: 3 meses</p>
-                            <p class="card-text mb-0">Sexo: Macho</p>
+                            <h5 class="card-title fw-bold"><?php echo $dbnombre; ?></h5>
+                            <p class="card-text mb-0">Edad: <?php echo $dbedad; ?> meses</p>
+                            <p class="card-text mb-0">Sexo: <?php echo $dbsexo; ?></p>
                                 <div class="row mx-0">
                                     <div class="col-12 col-sm-6 px-0 mt-2">
                                         <a href="#" class="mas px-0 fw-normal text-decoration-none" data-bs-toggle="modal" data-bs-target="#Modal1">Conóceme más</a>
-                                        
                                     </div>
                                     <div class="col-12 col-sm-6 px-0">
                                         <a href="#" class="btn py-1 px-4 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ADOPTAR</a>
